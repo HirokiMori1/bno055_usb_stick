@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) {
   pose_frame_id = ros::param::param< std::string >("~pose_frame_id", "fixed");
   const bool publish_tf(ros::param::param("~publish_tf", false));
   tf_frame_id = ros::param::param< std::string >("~tf_frame_id", "fixed");
-  tf_child_frame_id = ros::param::param< std::string >("~tf_child_frame_id", "bno055");
+  tf_child_frame_id = ros::param::param< std::string >("~tf_child_frame_id", "imu_link");
   invert_tf = ros::param::param("~invert_tf", false);
 
   // setup publishers

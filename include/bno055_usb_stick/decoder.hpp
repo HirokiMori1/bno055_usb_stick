@@ -26,7 +26,7 @@ namespace bno055_usb_stick {
 class Decoder {
 public:
   Decoder(const std::string &ns)
-      : frame_id_(ros::param::param< std::string >(ros::names::append(ns, "frame_id"), "bno055")) {}
+      : frame_id_(ros::param::param< std::string >(ros::names::append(ns, "frame_id"), "imu_link")) {}
 
   virtual ~Decoder() {}
 
