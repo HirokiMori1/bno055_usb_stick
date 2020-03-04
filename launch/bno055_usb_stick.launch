@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="bno055_usb_stick" name="bno055_usb_stick" type="bno055_usb_stick_node">
+  </node>
+</launch>
